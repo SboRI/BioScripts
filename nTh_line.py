@@ -2,11 +2,14 @@ import csv
 import itertools
 
 print("filename?")
+
 filename = input()
 print("keep first lines? How many? (enter number)")
 keepLines = int(input())
 print("keep each nTh line. n= ?")
 nTh = int(input())
+
+
 with open(filename, 'r', newline='') as csvFile:
     reader = csv.reader(csvFile, delimiter=';')
 
